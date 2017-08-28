@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import startsWith from "./"
+import startsWith from "./index"
 
 test(({ok, end}) => {
   ok(startsWith("I have")("I have no period"))
