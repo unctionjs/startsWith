@@ -1,6 +1,6 @@
 {
   "name": "@unction/startswith",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Determines if a string starts with another string",
   "keywords": [
     "unction",
