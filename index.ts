@@ -1,11 +1,10 @@
 import {test} from "ramda";
 import escapeStringRegexp from "escape-string-regexp";
-export default function startsWith (subset) {
-  const escaped = escapeStringRegexp(subset);
-  const ending = `^${escaped}`;
 
+import {TextType} from "./types";
 
-  return function startsWithSubset (set) {
-    return test(new RegExp(ending))(set);
+export default function startsWith (subset: TextType | RegExp) {
+  return function startsWithSubset (set: TextType): boolean {
+    return test(new RegExp(`^${escapeStringRegexp(subset)}`))(set);
   };
 }
