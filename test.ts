@@ -1,5 +1,5 @@
 
-import startsWith from "./index.ts";
+import startsWith from "./index";
 
 test(() => {
   expect(startsWith("I have")("I have no period")).toBeTruthy();
