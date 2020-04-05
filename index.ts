@@ -1,10 +1,8 @@
-import {test} from "ramda";
+import matchesRegExp from "@unction/matchesregexp";
 import escapeStringRegexp from "escape-string-regexp";
 
-import {TextType} from "./types";
-
-export default function startsWith (subset: TextType | RegExp) {
-  return function startsWithSubset (set: TextType): boolean {
-    return test(new RegExp(`^${escapeStringRegexp(subset)}`))(set);
+export default function startsWith (subset: string) {
+  return function startsWithSubset (set: string): boolean {
+    return matchesRegExp(new RegExp(`^${escapeStringRegexp(subset)}`))(set);
   };
 }

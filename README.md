@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> TextType | RegExp => TextType => boolean
+> string => string => boolean
 
 Determines if a given subset of text is at the start of another set of text.
 

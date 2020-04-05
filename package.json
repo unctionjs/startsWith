@@ -46,7 +46,6 @@
     "@babel/preset-env": "7.x",
     "@babel/preset-typescript": "7.x",
     "@babel/register": "7.x",
-    "@types/escape-string-regexp": "2.x",
     "@types/jest": "24.x",
     "@types/node": "12.x",
     "@types/ramda": "0.26.x",
@@ -65,7 +64,7 @@
     "typescript": "3.x"
   },
   "dependencies": {
-    "escape-string-regexp": "1.0.5",
-    "ramda": "0.24.1"
+    "@unction/matchesregexp": "1.0.0",
+    "escape-string-regexp": "2.0.0"
   }
 }
